@@ -1,0 +1,48 @@
+.app {
+  background-color: #0b1d26;
+  min-height: 100vh;
+
+  color: #fff;
+
+  scroll-behavior: smooth;
+
+  & .logo {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+// Custom bôi đen chữ
+::selection {
+  background: transparent;
+  color: #fbd784;
+}
+::-moz-selection {
+  background: transparent;
+  color: #fbd784;
+}
+::-webkit-selection {
+  background: transparent;
+  color: #fbd784;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23343c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}

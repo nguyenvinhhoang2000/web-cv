@@ -1,0 +1,57 @@
+.header {
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+
+  z-index: 10;
+
+  &_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    padding: 0 80px;
+
+    &--logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    &--menu > a {
+      display: inline-block;
+      padding: 8px 24px;
+      text-decoration: none;
+
+      color: #fff;
+      font-weight: 700;
+      line-height: 32px;
+
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        color: #fbd784;
+      }
+    }
+
+    &--account {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+
+      & > svg {
+        padding-right: 5px;
+      }
+
+      &:hover {
+        color: #fbd784;
+        cursor: pointer;
+      }
+    }
+  }
+}
